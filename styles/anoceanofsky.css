@@ -1,6 +1,17 @@
 /* A Free Design by Bryant Smith (bryantsmith.com) */
 
+/* Page Width */
+#page, #mainPicture, #footer, .contentBox
+{
+    width: 670px;
+}
 
+/* Content width */
+
+#mainPicture .picture, .contentBox .innerBox
+{
+    width: 650px;
+}
 
 body {
 	margin: 0;
@@ -23,7 +34,6 @@ body {
   height:auto;
   position: relative; 
   overflow: hidden; 
-  width: 670px;
 }
 
 .topNaviagationLink
@@ -61,16 +71,9 @@ background-image:url(../img/tab.png);
 
 }
 
-#mainPicture
-{
-width:670px;
-height:345px;
-background-color:#FFFFFF;
-}
 
 #mainPicture
 {
-width:670px;
 height:345px;
 background-color:#FFFFFF;
 }
@@ -78,7 +81,6 @@ background-color:#FFFFFF;
 #mainPicture .picture
 {
 position:relative;
-width:650px;
 height:325px;
 top:10px;
 background-image:url(../img/anoceanofsky.jpg);
@@ -108,7 +110,6 @@ font-family:"Adobe Garamond Pro Bold", Georgia, "Times New Roman", Times, serif;
 
 .contentBox
 {
-width:670px;
 height:auto;
 background-color:#FFFFFF;
 margin-top:10px;
@@ -117,7 +118,6 @@ margin-top:10px;
 .contentBox .innerBox
 {
 position:relative;
-width:650px;
 height:auto;
 top:10px;
 margin-left:10px;
@@ -145,7 +145,6 @@ margin-right:13px;
 
 #footer {
 
-width: 670px;
 height:16px;
 background: url(../img/footer.png) no-repeat;
 text-align:center;
