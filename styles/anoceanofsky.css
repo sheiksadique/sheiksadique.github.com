@@ -8,7 +8,6 @@
 }
 
 /* Content width */
-
 #mainPicture .picture, .contentBox .innerBox
 {
     width: 1004px;
@@ -88,8 +87,6 @@ body {
 #mainPicture .picture
 {
     position:relative;
-    /*height:325px;
-    background-image:url(../img/anoceanofsky.jpg);*/
     height:240px;
     background-image:url(../img/capocaccia.jpg);
     background-repeat:no-repeat;
@@ -152,7 +149,7 @@ body {
 #footer 
 {
     height:16px;
-    background: url(../img/footer.png) no-repeat;
+    background: url(../img/footer.png);
     text-align:center;
     font-size:9px;
     font-family:Arial, Helvetica, sans-serif;

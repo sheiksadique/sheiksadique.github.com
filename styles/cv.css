@@ -2,10 +2,11 @@
 
 .cvTitle
 {
-    font-size:21px;
+    font-size:160%;
+    font-style:italic;
     margin-bottom:0px;
-    padding-top:18px;
-    margin-top:15px;
+    padding-top:0px;
+    margin-top:0px;
     width:20%; 
     float:left;
 }
@@ -18,16 +19,16 @@
 
 .cvSubtitle
 {
-    font-size:17px;
+    font-size:150%;
     margin-bottom:20px;
-    padding-top:18px;
+    padding-top:0px;
     margin-left:15px;
-    margin-top:15px;
+    margin-top:0px; /*15px;*/
 }
 
 .cvText
 {
-    font-size:13px;
+    font-size:100%;
     line-height:24px;
     margin-left:13px;
     margin-right:13px;
@@ -45,9 +46,12 @@
 }
 
 .cvSection 
-{ 
-    margin-bottom: 2em; 
-    padding-bottom: 2em;
+{
+    width: 85%;
+    margin-top: 1em; 
+    padding-top: 1em;
+    margin-bottom: 1em; 
+    padding-bottom: 1em;
     border-bottom: 1px solid #ccc;
 }
 
@@ -57,5 +61,22 @@
 	content:'.';
 	height:0;
 	visibility:hidden;
+}
+
+#myphoto
+{
+    background-color:#FFFFFF;
+    height:240px;
+    /*width:auto;*/
+    padding-bottom:20px;
+    float:right;
+}
+
+#myphoto .picture
+{
+    height:220px;
+    margin-top:10px;
+    margin-left:10px;
+    margin-right:10px;
 }
 
