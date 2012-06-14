@@ -1,0 +1,13 @@
+/* Stylesheet design for all my custom styles on the page */
+
+pre {
+ white-space: pre-wrap;
+ white-space: -moz-pre-wrap;
+ white-space: -o-pre-wrap;
+ background: #faf8f0;
+}
+#content #pre-stylish code {
+ display: block;
+ padding: 0.5em 1em;
+ border: 1px solid #bebab0;
+}
