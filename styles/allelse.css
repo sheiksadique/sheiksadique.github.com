@@ -11,3 +11,15 @@ pre {
  padding: 0.5em 1em;
  border: 1px solid #bebab0;
 }
+
+
+.photo {
+    background-color: rgba(0,0,0,0.1);
+    height:100%;
+    /*width:auto;*/
+    float:right;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:10px;
+    padding-right:10px;
+}
