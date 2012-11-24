@@ -3,23 +3,23 @@
 from xml.dom.minidom import *
 import glob
 
-def generateAllPages(templates='./templates/', destination='./_html/'):
+def generateAllPages(path='./src/pages/', templates='./src/templates/', destination='./_html/'):
     '''
     Function to generate all pages of the website
     '''
     print('The following files are being generated.')
-    for p in glob.glob1(templates, '*.html'):
+    for p in glob.glob1(path, '*.html'):
         print p
-        generatePage(p, templates=templates, destination=destination)
+        generatePage(p, path=path, templates=templates, destination=destination)
 
-def generatePage(page='index.html', templates='./templates/', destination='./_html/'):
+def generatePage(page='index.html', path='./src/pages/', templates='./src/templates/', destination='./_html/'):
     '''
     Generate Page by filling up the templates
     page: name of the page
     templates: location of templates folder
     destination: location of generated files
     '''
-    pg = parse(templates+page)
+    pg = parse(path+page)
     tempNodes = pg.getElementsByTagName('template')
     for tn in tempNodes:
         tp = getTemplate(tn.getAttribute('class'), templates=templates)
@@ -29,7 +29,7 @@ def generatePage(page='index.html', templates='./templates/', destination='./_ht
     f.close()
     return pg
 
-def getTemplate(name='header', templates='./templates/'):
+def getTemplate(name='header', templates='./src/templates/'):
     '''
     Returns a node with the template html
     '''
