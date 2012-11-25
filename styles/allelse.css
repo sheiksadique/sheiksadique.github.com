@@ -15,7 +15,8 @@ pre {
 
 .photo {
     background-color: rgba(0,0,0,0.1);
-    height:100%;
+    width:50%;
+    height:auto;
     /*width:auto;*/
     float:right;
     padding-top:10px;
