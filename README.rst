@@ -25,14 +25,12 @@ easier. The directory structure is as follows.
 
     img/ -- Image directory
     styles/ -- css style sheet files
-    templates/ -- This is where the webpages under development are placed.
+    src/ -- This is where the webpages under development are placed.
                   There are essentially two calsses of files.
-                  - .html : HTML page files.
-                  - .tmpl : reusable html code.
+                  /pages/ - .html : HTML page files.
+                  /templates/ - .tmpl : reusable html code.
 
-Any pages are to be named .html and placed in templates folder. You can use
-"<template class='templatename'/>" tag in your pages to use any of the reusable
-html in .tmpl files.
+Any pages that are to be included should be named \*.html and placed in templates folder. You can use "<template class='templatename'/>" tag in your pages to use any of the reusable html in src/templates/\*.tmpl files.
 
 Page generation
 ===============
