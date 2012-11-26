@@ -1,5 +1,5 @@
 /* A Free Design by Bryant Smith (bryantsmith.com) */
-/* Modified by Sadique Sheik (bryantsmith.com) */
+/* Modified by Sadique Sheik */
 
 /* Page Width */
 #page, #mainPicture, #footer, .contentBox
@@ -96,8 +96,9 @@ body {
 #headerTitle
 {
     position:relative;
+    text-align: right;
     top:30px;
-    left:40px;
+    right:40px;
     font-size:25px;
     color:#FFFFFF;
     font-family:"Adobe Garamond Pro Bold", Georgia, "Times New Roman", Times, serif;
@@ -106,8 +107,9 @@ body {
 #headerSubtext
 {
     position:relative;
-    top:30px;
-    left:50px;
+    text-align: right;
+    top:50px;
+    right:50px;
     font-size:14px;
     color:#A9C8FA;
     font-family:"Adobe Garamond Pro Bold", Georgia, "Times New Roman", Times, serif;
