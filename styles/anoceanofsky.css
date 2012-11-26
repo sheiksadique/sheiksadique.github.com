@@ -20,7 +20,7 @@ body {
 	padding: 0;
 	text-align: left;
 	font-family:"Adobe Garamond Pro Bold", Georgia, "Times New Roman", Times, serif;
-	font-size: 13px;
+	font-size: 15px;
 	color: #061C37;
 	background: #014D5D url(../img/background.png);
 	background-repeat:repeat-x;
@@ -133,8 +133,8 @@ body {
 
 .contentTitle
 {
-    font-size:19px;
-    margin-bottom:0px;
+    font-size:22px;
+    margin-bottom:1em;
     padding-top:18px;
     margin-left:15px;
     margin-top:15px;
@@ -142,7 +142,7 @@ body {
 
 .contentText
 {
-    font-size:13px;
+    font-size:15px;
     line-height:24px;
     margin-left:13px;
     margin-right:13px;
