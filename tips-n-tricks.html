@@ -38,6 +38,32 @@
             This is where all those spooky tricks will be shared for the greater good of mankind.
                     </p><br/>
                 </div>
+                <div class="contentTitle"><a href="#python-meta" id="python-meta">Python : Meta Classes and type()</a></div>
+                <div class="contentText">
+                    <p>Spoiled by python's flexibility, did you ever have the desire/need to be able to create classes at runtime ? 
+                    I happen to use <a href="http://www.enthought.com/">enthought traits</a> a lot to generate GUIs for my programs. A very nice alternative to Enghought packages is <a href="http://code.google.com/p/guiqwt/">guiqwt</a> + <a href="http://code.google.com/p/guidata">guidata</a>. While I have been migrating to guidata+guiqt, a problem that has persisted is the fact that these libraries ask of you to define a class for each GUI component/widget that you want to customize. This does not allow me to generate some elements on the fly (like a dynamic dropdown list). So I always say to myself, it would have been great if I could generate classes on the fly. After a bit of googling and forum browsing I stumbled upon a post that just changed my whole perception of python.</p><br/>
+                    <p>
+                    Python's meta-classes were the answer to my prayers. 
+                    Metaclasses are classes that initialize classes (as opposed to objects). <i>type</i> is one such metaclass (o_O .. i know !!). <i>type()</i> as most of us use tells us the class type of any given object. But there is a more interesting role to this <i>function</i>, it is actually a <i>class</i>!. The class type of <i>object</i> is <i>type</i>.
+                    <pre>
+                        <code>
+$ object.__class__
+  type
+                        </code>
+                    </pre>
+                    You can infact use <i>type</i> to initialize/define a class as follows.
+                    <pre>
+                        <code>
+$ ClassName = type('ClassName', (classes, to, inherit, from), {'attr1': value, 'attrn': valuen,})
+                        </code>
+                    </pre>
+                    </p><br/>
+                    <p>
+                    Checkout this post for more on meta classes: 
+                    <a href="http://cleverdevil.org/computing/78/">Metaclasses Demystified</a>. 
+                    The author explaiins very beautifully what metaclasses are all about and why they are useful.
+		            </p><br/>
+                </div>
                 <div class="contentTitle"><a href="#code-display" id="code-display">Displaying code in your webpage with css</a></div>
                 <div class="contentText">
                     <p>Check out this page where the author nicely describes what the issues are in displaying programs in html pages and how you could overcome the problem : <a href="http://projectcerbera.com/web/articles/code-in-pre">Code Boxes with pre and CSS</a></p><br/>
