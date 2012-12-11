@@ -27,3 +27,11 @@ code {
     padding-right:10px;
     margin-left: 10px;
 }
+
+.postListBox
+{
+    width:20%;
+    float:right;
+    margin-left:10px;
+}
+

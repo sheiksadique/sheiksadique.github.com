@@ -1,0 +1,11 @@
+                <div class="contentTitle"><a href="#dd-progress" id="dd-progress">dd copy with progress bar</a></div>
+                <div class="contentText">
+                    <p>Did you have to copy a hardisk or a large partition with dd and wished you knew how much longer its going to take for the process to finish ? Wished there was a progress bar ? Check this out <a href="http://www.commandlinefu.com/commands/view/5293/dd-with-progress-bar">dd with progress bar</a></p><br/>
+		            <p>It is actually uses the command pv to pipe data through, which then generates the progress bar. I suppose this could be done with other processes that involve large data transfer times like cp, althought I have never tried it myself. Here is what you need to do for dd with progress bar:
+                    <pre>
+                        <code>
+dd if=/dev/nst0 |pv|dd of=restored_file.tar
+                        </code>
+                    </pre>
+		            </p><br/>
+                </div>

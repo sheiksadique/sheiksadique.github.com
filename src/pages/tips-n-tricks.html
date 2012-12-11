@@ -14,67 +14,29 @@
             This is where all those spooky tricks will be shared for the greater good of mankind.
                     </p><br />
                 </div>
-                <div class="contentTitle"><a id="python-meta" href="#python-meta">Python : Meta Classes and type()</a></div>
-                <div class="contentText">
-                    <p>Spoiled by python's flexibility, did you ever have the desire/need to be able to create classes at runtime ? 
-                    I happen to use <a href="http://www.enthought.com/">enthought traits</a> a lot to generate GUIs for my programs. A very nice alternative to Enghought packages is <a href="http://code.google.com/p/guiqwt/">guiqwt</a> + <a href="http://code.google.com/p/guidata">guidata</a>. While I have been migrating to guidata+guiqt, a problem that has persisted is the fact that these libraries ask of you to define a class for each GUI component/widget that you want to customize. This does not allow me to generate some elements on the fly (like a dynamic dropdown list). So I always say to myself, it would have been great if I could generate classes on the fly. After a bit of googling and forum browsing I stumbled upon a post that just changed my whole perception of python.</p><br />
-                    <p>
-                    Python's meta-classes were the answer to my prayers. 
-                    Metaclasses are classes that initialize classes (as opposed to objects). <i>type</i> is one such metaclass (o_O .. i know !!). <i>type()</i> as most of us use tells us the class type of any given object. But there is a more interesting role to this <i>function</i>, it is actually a <i>class</i>!. The class type of <i>object</i> is <i>type</i>.
-                    <pre>
-                        <code>
-$ object.__class__
-  type
-                        </code>
-                    </pre>
-                    You can infact use <i>type</i> to initialize/define a class as follows.
-                    <pre>
-                        <code>
-$ ClassName = type('ClassName', (classes, to, inherit, from), {'attr1': value, 'attrn': valuen,})
-                        </code>
-                    </pre>
-                    </p><br />
-                    <p>
-                    Checkout this post for more on meta classes: 
-                    <a href='http://cleverdevil.org/computing/78/'>Metaclasses Demystified</a>. 
-                    The author explaiins very beautifully what metaclasses are all about and why they are useful.
-		            </p><br />
+                <div class='postListBox'>
+                    <div>
+                        <ul>
+                            <li><a href='#code-display' onclick="loadPost('code-display', '#post-container')">
+                                Displaying code in your webpage with css
+                            </a></li>
+                            <li><a href='#dd-progress' onclick="loadPost('dd-progress', '#post-container')">
+                                dd copy with progress bar
+                            </a></li>
+                            <li><a href='#python-meta' onclick="loadPost('python-meta', '#post-container')">
+                                Python: Meta classes and type()
+                            </a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="contentTitle"><a id="code-display" href='#code-display'>Displaying code in your webpage with css</a></div>
-                <div class="contentText">
-                    <p>Check out this page where the author nicely describes what the issues are in displaying programs in html pages and how you could overcome the problem : <a href="http://projectcerbera.com/web/articles/code-in-pre">Code Boxes with pre and CSS</a></p><br />
-		            <p>Here is the gist of it. Use the 'pre' tag to embed your code and your job is done. If you want something more fancy you can modify its behavior with the css. Below is the css code they suggest on the above page.
-                    <pre>
-                        <code>
-/* Code Samples */
-pre {
- white-space: pre-wrap;
- white-space: -moz-pre-wrap;
- white-space: -o-pre-wrap;
- background: #faf8f0;
-}
-code {
- display: block;
- padding: 0.5em 1em;
- border: 1px solid #bebab0;
-}
-                        </code>
-                    </pre>
-		            </p><br />
-                </div>
-                <div class="contentTitle"><a id="dd-progress" href="#dd-progress">dd copy with progress bar</a></div>
-                <div class="contentText">
-                    <p>Did you have to copy a hardisk or a large partition with dd and wished you knew how much longer its going to take for the process to finish ? Wished there was a progress bar ? Check this out <a href="http://www.commandlinefu.com/commands/view/5293/dd-with-progress-bar">dd with progress bar</a></p><br />
-		            <p>It is actually uses the command pv to pipe data through, which then generates the progress bar. I suppose this could be done with other processes that involve large data transfer times like cp, althought I have never tried it myself. Here is what you need to do for dd with progress bar:
-                    <pre>
-                        <code>
-dd if=/dev/nst0 |pv|dd of=restored_file.tar
-                        </code>
-                    </pre>
-		            </p><br />
-                </div>
+                <div id="post-container" />
             </div>
         </div>
     <template class='footer'/>
+    <script>
+        if (window.location.hash != ''){
+            loadPost4mURL('#post-container');
+        }
+    </script>
 </body>
 </html>
