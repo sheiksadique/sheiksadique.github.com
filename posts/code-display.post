@@ -1,22 +1,24 @@
-<div class="contentTitle"><a href="#code-display" id="code-display">Displaying code in your webpage with css</a></div>
-<div class="contentText">
-    <p>Check out this page where the author nicely describes what the issues are in displaying programs in html pages and how you could overcome the problem : <a href="http://projectcerbera.com/web/articles/code-in-pre">Code Boxes with pre and CSS</a></p><br/>
-    <p>Here is the gist of it. Use the 'pre' tag to embed your code and your job is done. If you want something more fancy you can modify its behavior with the css. Below is the css code they suggest on the above page.
-    <pre>
-                        <code>
-/* Code Samples */
-pre {
- white-space: pre-wrap;
- white-space: -moz-pre-wrap;
- white-space: -o-pre-wrap;
- background: #faf8f0;
-}
-code {
- display: block;
- padding: 0.5em 1em;
- border: 1px solid #bebab0;
-}
-        </code>
-    </pre>
-    </p><br/>
+<div>
+    <div class="contentTitle"><a href="#code-display" id="code-display">Displaying code in your webpage with css</a></div>
+    <div class="contentText">
+        <p>Check out this page where the author nicely describes what the issues are in displaying programs in html pages and how you could overcome the problem : <a href="http://projectcerbera.com/web/articles/code-in-pre">Code Boxes with pre and CSS</a></p><br/>
+        <p>Here is the gist of it. Use the 'pre' tag to embed your code and your job is done. If you want something more fancy you can modify its behavior with the css. Below is the css code they suggest on the above page.
+        <pre>
+                            <code>
+    /* Code Samples */
+    pre {
+     white-space: pre-wrap;
+     white-space: -moz-pre-wrap;
+     white-space: -o-pre-wrap;
+     background: #faf8f0;
+    }
+    code {
+     display: block;
+     padding: 0.5em 1em;
+     border: 1px solid #bebab0;
+    }
+            </code>
+        </pre>
+        </p><br/>
+    </div>
 </div>

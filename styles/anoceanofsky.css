@@ -120,6 +120,7 @@ body {
     height:auto;
     background-color:#FFFFFF;
     margin-top:10px;
+    float:center;
 }
 
 .contentBox .innerBox
@@ -129,6 +130,8 @@ body {
     background-image:url(../img/content_back.png);
     background-repeat:repeat-x;
     padding-bottom:35px;
+    float:center;
+    overflow:auto;
 }
 
 .contentTitle

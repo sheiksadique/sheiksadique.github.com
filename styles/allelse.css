@@ -30,8 +30,16 @@ code {
 
 .postListBox
 {
+    background-color: rgba(1,1,1,0.1);
     width:20%;
+    height:auto;
+    position:relative;
+    margin-right:10px;
+    margin-left:1em;
+    margin-bottom:10px;
+    padding-bottom:1em;
+    padding-top:1em;
     float:right;
-    margin-left:10px;
+    border: 10px solid green;
 }
 
