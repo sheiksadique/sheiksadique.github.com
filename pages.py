@@ -4,18 +4,18 @@ from lxml import etree
 import glob
 
 def generateAllPages(path='./src/pages/', templates='./src/templates/',
-                     posts='./posts/', destination='./_html/'):
+                     destination='./_html/'):
     '''
     Function to generate all pages of the website
     '''
     print('The following files are being generated.')
     for p in glob.glob1(path, '*.html'):
         print(p)
-        generatePage(p, path=path, templates=templates, posts=posts,
+        generatePage(p, path=path, templates=templates,
                      destination=destination)
 
 def generatePage(page='index.html', path='./src/pages/',
-                 templates='./src/templates/', posts='./posts/',
+                 templates='./src/templates/',
                  destination='./_html/',):
     '''
     Generate Page by filling up the templates
@@ -26,7 +26,7 @@ def generatePage(page='index.html', path='./src/pages/',
     pg = etree.parse(path+page).getroot()
     includeTemplate(pg, templates=templates)
     for nd in pg.findall('.//{'+pg.nsmap[None]+'}postListBox'):
-        listPosts(nd, posts=posts)
+        listPosts(nd, posts=nd.get('posts'))
     with open(destination+page, 'wb') as f:
         f.write(etree.tostring(pg, pretty_print=True))
     return pg
@@ -66,7 +66,7 @@ def listPosts(pg, posts='./posts/'):
     node = etree.XML("<div class='postListBox'><div><ul /></div></div>")
     lst = node.findall('.//ul')[0]
     for p in glob.glob1(posts, '*.post'):
-        print(p)
+        print("- " + p)
         lnk = etree.XML('<a />')
         pst = etree.parse(posts+p).getroot()
         for div in pst.findall('.//div'):
