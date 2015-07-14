@@ -26,7 +26,9 @@ def generatePage(page='index.html', path='./src/pages/',
     pg = etree.parse(path+page).getroot()
     includeTemplate(pg, templates=templates)
     for nd in pg.findall('.//{'+pg.nsmap[None]+'}postListBox'):
-        listPosts(nd, posts=nd.get('posts'))
+        z = listPosts(nd, posts=nd.get('posts'))
+    for nd in pg.findall('.//{'+pg.nsmap[None]+'}div[@id]'):
+        nd.text = 
     with open(destination+page, 'wb') as f:
         f.write(etree.tostring(pg, pretty_print=True))
     return pg
@@ -75,7 +77,7 @@ def listPosts(pg, posts='./posts/'):
                 lnk.set('href', '#'+nd.get('id'))
                 lnk.set('onclick', 
                         "loadPost('{0}', '#post-container')".format(
-                            nd.get('id')))
+                            (posts+nd.get('id'))))
                 lnk.text = nd.text
         itm = etree.XML('<li />')
         itm.append(lnk)
