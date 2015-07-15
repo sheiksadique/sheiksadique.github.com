@@ -20,8 +20,12 @@
         </div>
     <template class='footer'/>
     <script>
+        // Code for loading from url
         if (window.location.hash != ''){
             loadPost4mURL('#post-container');
+        }
+        else {
+            loadPost("code-display","tips-n-tricks/",'#post-container')
         }
     </script>
 </body>
