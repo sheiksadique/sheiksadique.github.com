@@ -1,11 +1,12 @@
-function loadPost(postname, loc)
+function loadPost(postname, srcloc, loc)
 {
     /*
-     * loadPost(postname, loc)
+     * loadPost(postname,srcloc, loc)
      * postname: name of the post you want to display
+     * srcloc: location of the source files
      * loc: location or element where the post is to be displayed 
      */
-    $(loc).load("posts/"+postname+".post");
+    $(loc).load(srcloc+postname+".post");
 }
 
 function loadPost4mURL(loc)
@@ -15,5 +16,6 @@ function loadPost4mURL(loc)
      * loc: location or element where the post is to be displayed
      */
     postname = (window.location.hash).split('#')[1];
-    loadPost(postname, loc);
+    //srcloc = (window.location.pathname).split('.')[0];
+    loadPost(postname, "/posts/", loc);
 }

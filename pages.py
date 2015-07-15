@@ -76,8 +76,9 @@ def listPosts(pg, posts='./posts/'):
                 nd = div.findall('.//a')[0]
                 lnk.set('href', '#'+nd.get('id'))
                 lnk.set('onclick', 
-                        "loadPost('{0}', '#post-container')".format(
-                            (posts+nd.get('id'))))
+                        "loadPost('{0}','{1}', '#post-container')".format(
+                            nd.get('id'),
+                            posts.lstrip('.')))
                 lnk.text = nd.text
         itm = etree.XML('<li />')
         itm.append(lnk)
