@@ -1,7 +1,11 @@
 Sadique Sheik's home page
 =========================
 
-The homepage is developed based on a template designed my Bryant Smith. Below
+
+Credits
+=======
+
+The homepage is developed based on a template designed by Bryant Smith. Below
 are the details of the template.
 
 Design by Bryant Smith
