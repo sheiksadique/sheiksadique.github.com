@@ -6,7 +6,7 @@ function loadPost(postname, srcloc, loc)
      * srcloc: location of the source files
      * loc: location or element where the post is to be displayed 
      */
-    $(loc).load(srcloc+postname+".post");
+    $(loc).load(srcloc+"/"+postname+".post");
 }
 
 function loadPost4mURL(loc)
