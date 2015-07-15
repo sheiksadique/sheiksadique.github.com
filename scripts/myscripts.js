@@ -16,6 +16,6 @@ function loadPost4mURL(loc)
      * loc: location or element where the post is to be displayed
      */
     postname = (window.location.hash).split('#')[1];
-    //srcloc = (window.location.pathname).split('.')[0];
-    loadPost(postname, "/posts/", loc);
+    srcloc = (window.location.pathname).split('.')[0];
+    loadPost(postname, srcloc, loc);
 }
