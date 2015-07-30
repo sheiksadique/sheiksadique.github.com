@@ -2,6 +2,7 @@
 
 from lxml import etree
 import glob
+import os
 
 def generateAllPages(path='./src/pages/', templates='./src/templates/',
                      destination='./_html/'):
@@ -67,7 +68,9 @@ def listPosts(pg, posts='./posts/'):
     print('The following posts are being listed.')
     node = etree.XML("<div class='postListBox'><div><ul /></div></div>")
     lst = node.findall('.//ul')[0]
-    for p in glob.glob1(posts, '*.post'):
+    files = glob.glob1(posts, '*.post')
+    files.sort(key=lambda x: -1*os.path.getmtime(posts+x))
+    for p in files:
         print("- " + p)
         lnk = etree.XML('<a />')
         pst = etree.parse(posts+p).getroot()
