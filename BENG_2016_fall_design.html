@@ -30,11 +30,6 @@
     </div>
 </div><div class="contentBox">
     	<div class="innerBox">
-            <div class="contentText">
-		        <p>
-        I am working on some exciting projects that are mostly driven by personal curiosity and with the goal of learning something new. Here are some of these projects from past and present.
-                </p><br />
-            </div>
         	<div class="contentTitle">Emulation of Neural Networks on Neuromorphic Hardware</div>
             <div class="contentTitle">Project description</div>
             <div class="contentText">
@@ -42,29 +37,46 @@
                 Simulation of the activity of neuronal populations composed of hundreds to thousands of neurons is carried out routinely on software platforms. However, these simulations are extremely slow and far from real-time when the model complexity and/or the number of neurons increases, seriously limiting the applications of such models. One current alternative to overcome this scalability issue is to implement these software models on neuromorphic hardware allowing to run large-scale neural models in real-time independently of the model complexity.
                 </p><br />
                 <p>
-                Development of such neuromorphic hardware using highly programmable \acp{FPGA} is part of on going research has shown great promise in terms of configurability and flexibility. While such hardware exists, it is still very challenging to directly access and configure this hardware from a user stand point. For instance real-time data acquisition and visualization are key to exploit real-time hardware but are currently lacking. In addition, currently one needs expertise with hardware design to be able to use neuromorphic tools, there by limiting access to such state-of-the-art hardware. This project aims to alleviate these limitations and bridge the gap between computational neuro-scientists and neuromorphic engineering.
+                Development of such neuromorphic hardware using highly programmable FPGA (Field Programmable Gate Arrays) is part of on going research has shown great promise in terms of configurability and flexibility. While such hardware exists, it is still very challenging to directly access and configure this hardware from a user stand point. For instance real-time data acquisition and visualization are key to exploit real-time hardware but are currently lacking. In addition, currently one needs expertise with hardware design to be able to use neuromorphic tools, there by limiting access to such state-of-the-art hardware. This project aims to alleviate these limitations and bridge the gap between computational neuro-science and neuromorphic engineering.
                 </p><br />
             </div>
 
-                <div class="contentTitle">Objective</div>
-                <div class="contentText">
+            <div class="contentTitle">Objective</div>
+            <div class="contentText">
                 <p>
 In this project we propose to design and develop a set of Python based software tools as part of a software library <a href="http://github.com/inincs/pyNCS">pyNCS</a> allowing to map software neural models onto real-time neuromorphic hardware.
 Students will initially use the open-source <a href="http://briansimulator.org/">Brian neural simulator</a>
 to study basics of Spiking Neural Networks. Then they will design several python based functions/modules allowing the implementation of various spiking network ``topologies". Further software tools will then be developed in order to map the model parameters onto a state-of-the-art \ac{FPGA} based neuromorphic system. 
                 </p><br />
             </div>
-                <div class="contentTitle">Resources Provided</div>
-                <div class="contentText">
+            <div class="contentTitle">Resources Provided</div>
+            <div class="contentText">
                 <p>
 Integrated Systems Neuroengineering Lab (ISNL) led by Gert Cauwenberghs will provide access to several FPGA development boards, and state-of-the-art neuromorphic technologies necessary for this project.
 Students will be co-supervised by a postdoctoral fellow (<a href="http://sheiksadique.github.io">Sadique Sheik</a>) and an assistant project scientist (Frederic Broccard), and will also receive support from grad students developing the neuromorphic hardware. In addition, <a href="http://isn.ucsd.edu/">Prof. Gert Cauwenberghs</a> will help guide the project.
                 </p><br />
             </div>
-                <div class="contentTitle">Supervision</div>
-                <div class="contentText">
+            <div class="contentTitle">Introductory Study Material</div>
+            <div class="contentText">
                 <p>
-Students will be co-supervised by a postdoctoral fellow (Sadique Sheik) and an assistant project scientist (Frederic Broccard). In addition Prof. Gert Cauwenberghs will also help guide the project.
+For a good survey of different classes of neural models, we recommend reading chapters 1, 2 and 5 of
+the <a href="http://neuronaldynamics.epfl.ch">Neuronal Dynamics</a> book available online.
+
+You can then explore BRIAN by first reading <a href="http://journal.frontiersin.org/article/10.3389/neuro.01.026.2009/full">this paper</a> that will give you an overview of the simulator (the access should be free).
+
+
+There are also two main tutorials available on the BRIAN website:
+
+- Tutorial 1 has 7 parts (a-g) and goes from single neuron to networks:
+<a href="http://www.briansimulator.org/docs/tutorial1_basic_concepts.html">http://www.briansimulator.org/docs/tutorial1_basic_concepts.html</a>
+
+- Tutorial 2 is more about the way of connecting neurons:
+<a href="http://www.briansimulator.org/docs/tutorial2_connections.html">http://www.briansimulator.org/docs/tutorial2_connections.html</a>
+
+Finally, here's a good general reference for starting learning the Python language:
+<a href="http://pymbook.readthedocs.io/en/latest/">http://pymbook.readthedocs.io/en/latest/</a>
+
+Note that you can easily go through the BRIAN tutorials without any prior Python knowledge.
                 </p><br />
             </div>
         </div>
