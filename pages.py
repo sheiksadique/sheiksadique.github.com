@@ -9,7 +9,7 @@ def generateAllPages(path='./src/pages/', templates='./src/templates/',
     '''
     Function to generate all pages of the website
     '''
-    print('The following files are being generated.')
+    print('The following files are being generated from {0}'.format(path))
     for p in glob.glob1(path, '*.html'):
         print(p)
         generatePage(p, path=path, templates=templates,
@@ -91,3 +91,4 @@ def listPosts(pg, posts='./posts/'):
 
 if __name__=='__main__':
     generateAllPages(destination='./')
+    generateAllPages(path='./src/pages/projects/', destination='./projects/')
