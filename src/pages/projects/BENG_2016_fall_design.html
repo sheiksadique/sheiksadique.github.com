@@ -62,6 +62,15 @@ Finally, here's a good general reference for starting learning the Python langua
 Note that you can easily go through the BRIAN tutorials without any prior Python knowledge.
                 </p><br />
             </div>
+            <div class="contentTitle">Hardware Interface Development</div>
+            <div class="contentText">
+                <p>
+                We will be developing the interface and tools for an FPGA based simulation platform that is being currently developed in the lab. The low level drivers necessary to interface with the hardware will first be developed in python. A user friendly interface will be driven by pyNCS at the top level, which intern uses the developed drivers. An introduction to pyNCS can be found in the paper found <a href="http://journal.frontiersin.org/article/10.3389/fninf.2014.00073/full">here</a>. The corresponding software library can be found on <a href="https://github.com/inincs/pyNCS">github</a>.
+                </p><br />
+                <p>
+                pyNCS provides an API (a defined set of functions with a given syntax) which govern how the drivers are to be written in order for it to access neuromorphic hardware. As part of this project we will develop our drivers to be consistent with this API and will then use pyNCS as a means of accessing our hardware and describing neural networks at a more abstract level of Populations and Connections.
+                </p><br />
+            </div>
         </div>
         </div>
     <template class='footer'/>
