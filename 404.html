@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting to sadique.sheik.ch</title>
+    <meta http-equiv="refresh" content="0; url=https://sadique.sheik.ch">
+    <script>
+        // Get the current path
+        var path = window.location.pathname;
+        // Remove leading slash and .html extension if present
+        path = path.replace(/^\//, '').replace(/\.html$/, '');
+        // If there's a path, try to redirect to the corresponding page on the new domain
+        if (path) {
+            window.location.href = "https://sadique.sheik.ch/" + path;
+        } else {
+            window.location.href = "https://sadique.sheik.ch";
+        }
+    </script>
+</head>
+<body>
+    <p>If you are not redirected automatically, please <a href="https://sadique.sheik.ch">click here</a>.</p>
+</body>
+</html> 
